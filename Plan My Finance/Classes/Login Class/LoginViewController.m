@@ -33,6 +33,8 @@ typedef NS_ENUM(NSInteger, WebServiceType)
     appFunc.delegate = self;
 }
 - (void)viewDidLoad {
+
+    [_forgetpasswordBackBtn setHidden:YES];
     [_forgetPasswordView setHidden:true];
     [_viewLogin setHidden:false];
     [_btnNewUser setTitleColor:IFAPrimaryColor forState:UIControlStateNormal];
@@ -296,6 +298,7 @@ typedef NS_ENUM(NSInteger, WebServiceType)
 - (IBAction)didForgetPasswordPressed:(UIButton *)sender {
     [_viewLogin setHidden:true];
     [_forgetPasswordView setHidden:false];
+    [_forgetpasswordBackBtn setHidden:false];
 }
 
 - (IBAction)didForgetPasswordSubmitButtonPressed:(UIButton *)sender {
@@ -321,5 +324,13 @@ typedef NS_ENUM(NSInteger, WebServiceType)
                 [appFunc callWebService:@"mm/user/forgetPassword" parameters:[NSString stringWithFormat:@"{\"emailId\":\"%@\"", mailText]];
         });
     }
+}
+
+- (IBAction)forgetpasswordBackBtn:(id)sender {
+    
+    [_viewLogin setHidden:false];
+    [_forgetPasswordView setHidden:false];
+    [_forgetpasswordBackBtn setHidden:true];
+    
 }
 @end
