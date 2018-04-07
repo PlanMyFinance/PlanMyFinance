@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  IFA
+//
+//  Created by Raviraj Jadeja on 16/07/17.
+//  Copyright © 2017 Raviraj Jadeja. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import <UIKit/UIKit.h>
+#import "AppDelegate.h"
+#import "AppFunctions.h"
+#define IFAAppDelegate ((AppDelegate *)[[UIApplication sharedApplication]delegate])
+#define IFAApiPath @"https://www.my-planner.in" 
+#define IFAScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define IFAScreenHeight [[UIScreen mainScreen] bounds].size.height
+
+#define IFAPrimaryColor [UIColor colorWithRed:17.0/255.0 green:42.0/255.0 blue:114.0/255.0 alpha:1.0]
+#define IFASecondaryColor [UIColor colorWithRed:98.0/255.0 green:189.0/255.0 blue:72.0/255.0 alpha:1.0]
+#define IFAGreyColor [UIColor colorWithRed:215.0/255.0 green:215.0/255.0 blue:215.0/255.0 alpha:1.0]
+
+#define IFARedColor [UIColor redColor]
+
+#define IFAContact @"sojan@planmyfinance.in"
+
+#endif /* PrefixHeader_pch */
