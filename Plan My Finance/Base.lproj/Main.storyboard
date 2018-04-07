@@ -146,15 +146,10 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_green.png" translatesAutoresizingMaskIntoConstraints="NO" id="GJM-5k-k1W">
-                                        <rect key="frame" x="64" y="37" width="193" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HV4-ho-e2N" userLabel="Forget Password Back Button">
-                                        <rect key="frame" x="17" y="28" width="32" height="36"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_green.png" translatesAutoresizingMaskIntoConstraints="NO" id="3vj-Uj-V38">
+                                        <rect key="frame" x="39" y="28" width="240" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="blackBackArrow.png"/>
-                                    </button>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </scrollView>
@@ -180,11 +175,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="8dn-0M-ffJ"/>
                     <connections>
-                        <outlet property="advisorLogo" destination="GJM-5k-k1W" id="8zl-hO-s1r"/>
                         <outlet property="btnSubmit" destination="4ln-Wf-nY5" id="Los-Mt-d92"/>
                         <outlet property="forgetPasswordMailTextField" destination="bRq-vv-9I7" id="PXJ-Td-tNa"/>
                         <outlet property="forgetPasswordView" destination="PMy-hH-v8R" id="x59-sY-akb"/>
-                        <outlet property="forgetpasswordBackBtn" destination="HV4-ho-e2N" id="W59-rx-vVt"/>
                         <outlet property="imgBorder" destination="YuM-rg-CZq" id="jaM-1l-yGz"/>
                         <outlet property="imgDynamicColor" destination="mil-hh-H7m" id="Vl4-Vb-kNf"/>
                         <outlet property="imgLoadingBar" destination="IqE-vM-ytn" id="zAa-fU-kUn"/>
@@ -1035,7 +1028,6 @@
     <resources>
         <image name="arrow_up.png" width="44" height="21"/>
         <image name="back_arrow.png" width="21" height="21"/>
-        <image name="blackBackArrow.png" width="22" height="34"/>
         <image name="ic_email.png" width="32" height="32"/>
         <image name="ic_envelope.png" width="32" height="32"/>
         <image name="ic_mobile.png" width="42" height="42"/>
